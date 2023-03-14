@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task4new();
     }
 
     public static void task1() {
@@ -41,15 +42,15 @@ public class Main {
         System.out.println("Задача 3");
         int year = 2016;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println("високосный");
+            System.out.println(year + " високосный год");
         } else {
-            System.out.println("не високосный");
+            System.out.println(year + " не високосный год");
         }
     }
 
     public static void task4() {
         System.out.println("Задача 4");
-        int deliveryDistance = 10;
+        int deliveryDistance = 95;
         int deliveryDay = 1;
         int deliveryDayFirst = deliveryDay + 1;
         int deliveryDayTwo = deliveryDay + 2;
@@ -93,4 +94,23 @@ public class Main {
         }
     }
 
+    public static void task4new() {
+        System.out.println("Задача 4 красивая");
+        int deliveryDistance = 150;
+        int deliveryDay = 1;
+
+        if (deliveryDistance > 20) {
+            deliveryDay++;
+        }
+
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryDay++;
+        }
+        if (deliveryDistance > 100) {
+            System.out.println("Доставка не доступна");
+        } else {
+            System.out.println("Потребуется дней: " + deliveryDay);
+        }
+    }
 }
+
