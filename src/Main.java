@@ -106,6 +106,7 @@ public class Main {
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
             deliveryDay++;
         }
+
         if (deliveryDistance > 100) {
             System.out.println("Доставка не доступна");
         } else {
